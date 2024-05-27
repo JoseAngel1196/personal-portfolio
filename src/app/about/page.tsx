@@ -4,13 +4,8 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
+import portraitImage from '@/images/portrait.png'
 
 function SocialLink({
   className,
@@ -69,58 +64,88 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+            I'm Jose Hidalgo. I live in New York City and I help companies build
+            scalable and resilient systems.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              Like any other software engineer's story, I’m not someone who
+              found their love for coding during high school or built my first
+              app when I was a kid. My journey to software began when I was
+              working as a technical support engineer back in 2017 (fun fact: my
+              first job in Engineering). I was still in my sixth semester at{' '}
+              <a href="https://unapec.edu.do/" target="_blank">
+                univeristy
+              </a>{' '}
+              and six months from graduation.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              During my first experience in the IT world, I met a senior
+              engineer who was working in the same company but in the
+              development team. He introduced me to the world of software, and I
+              instantly fell in love. In the following days, I invested my free
+              time in building side projects. These were very beginner projects
+              like CRUD apps, how to connect to a DB, etc. They were probably
+              not the best projects, but helped me a lot to get a general idea
+              of how to build software. I spent almost a month building projects
+              until I found a job posting from this{' '}
+              <a
+                href="https://www.linkedin.com/company/contraloriard/"
+                target="_blank"
+              >
+                public institution
+              </a>{' '}
+              looking for a software engineer. TL;DR: I applied and got the job,
+              yay! 😃 And that’s how I landed my first software engineering job.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              Two and a half years passed, and it got to a point where I wanted
+              to find more challenging projects. I had always dreamed of working
+              at a company in the USA. While trying to enter the US market, I
+              found a part-time role at an agency in Miami. They had
+              partnerships with multiple small companies across the country and
+              were helping them build internal apps for their clients. I had the
+              opportunity to talk with customers, discuss their problems, and
+              then go back to the team to design solutions.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              In March 2020, I met Pinwheel, and it changed my life. I joined as
+              one of the first engineers and learned what it takes to build a
+              company from the ground up. I helped build most of the services that powers the company today. 
+              Before Pinwheel, I had some experience in the software world, but Pinwheel really
+              matured me. During my time at Pinwheel, I’ve met awesome engineers
+              who have taught me how to build scalable systems and how to grow
+              in my career as a software engineer.
+            </p>
+            <p>
+              I hope that by reading this, you got an idea of a little bit about
+              me. If you want to hear more about me or want to work with me,
+              don’t hesitate to reach out.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={XIcon}>
-              Follow on X
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/JoseAngel1196"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/jose-hidalgo-rosa"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:joseangel1196@hotmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              joseangel1196@hotmail.com
             </SocialLink>
           </ul>
         </div>

@@ -7,14 +7,11 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoLaboratio from '@/images/logos/laboratio.jpeg'
+import logoContraloria from '@/images/logos/contraloria.jpeg'
+import logoPinwheel from '@/images/logos/pinwheel.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -187,35 +184,35 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Pinwheel',
+      title: 'Software Engineer, Platform',
+      logo: logoPinwheel,
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Pinwheel',
+      title: 'Software Engineer, Integrations',
+      logo: logoPinwheel,
+      start: '2020',
+      end: '2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Laboratio',
+      title: 'Full-Stack Engineer (Part-Time)',
+      logo: logoLaboratio,
+      start: '2020',
+      end: '2021',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Contraloría General de la República Dominicana',
+      title: 'Software Engineer',
+      logo: logoContraloria,
+      start: '2017',
+      end: '2020',
     },
   ]
 
@@ -277,11 +274,13 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Jose, a software engineer based in New York City. I'm one of the
-            platform engineers at <a href='https://www.pinwheelapi.com/'>Pinwheel</a>. I help Pinwheel build resilient microservices
-            and scalable infrastructure to ensure our's platform high availability and performance.
-            My work involves designing and implementing solutions that can handle large volumes 
-            of data and traffic, as well as collaborating with cross-functional teams to continuously 
-            improve our systems.
+            platform engineers at{' '}
+            <a href="https://www.pinwheelapi.com/">Pinwheel</a>. I help Pinwheel
+            build resilient microservices and scalable infrastructure to ensure
+            our's platform high availability and performance. My work involves
+            designing and implementing solutions that can handle large volumes
+            of data and traffic, as well as collaborating with cross-functional
+            teams to continuously improve our systems.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -291,7 +290,6 @@ export default async function Home() {
             />
             <SocialLink
               href="https://www.linkedin.com/in/jose-hidalgo-rosa/"
-
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
